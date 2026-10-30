@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portal educativo sobre genética, DNA, genes, cromossomos e hereditariedade.">
+<title>Genética em Foco | Portal de Biologia</title>
+<style>
+:root{--green:#176b52;--green2:#238365;--mint:#e7f3ed;--ink:#20332d;--muted:#60736b;--paper:#f7faf8;--white:#fff;--line:#dce8e1;--gold:#d6a84f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(10px)}
+.nav{max-width:1120px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-weight:800;letter-spacing:.3px;color:var(--green);font-size:1.15rem;text-decoration:none;white-space:nowrap}.brand span{color:var(--gold)}
+nav{display:flex;gap:17px;flex-wrap:wrap;justify-content:flex-end}nav a{font-size:.9rem;color:var(--muted);text-decoration:none;font-weight:700}nav a:hover{color:var(--green)}
+.hero{background:linear-gradient(120deg,#e7f3ed 0%,#f6faf7 58%,#dceee4 100%);padding:76px 22px 68px;overflow:hidden}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}
+.eyebrow{color:var(--green2);font-size:.78rem;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(2.6rem,6vw,4.7rem);line-height:1.04;margin:13px 0 18px;letter-spacing:-2px;color:#173e32}
+.hero p{font-size:1.1rem;color:#52675e;max-width:610px}
+.btn{display:inline-block;background:var(--green);color:white;text-decoration:none;padding:12px 20px;border-radius:8px;font-weight:700;margin-top:13px}.btn:hover{background:#10543f}
+.dna-art{min-height:260px;display:grid;place-items:center}.dna-art svg{width:min(100%,340px);height:auto;filter:drop-shadow(0 14px 16px #176b5220)}
+main{max-width:1120px;margin:auto;padding:18px 22px 70px}
+section{padding:56px 0 16px;scroll-margin-top:75px}
+.section-head{max-width:720px;margin-bottom:26px}.section-head h2{font-size:2rem;line-height:1.2;color:#1b4d3c;margin:7px 0}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 5px 18px #173e3208}
+.card h3{margin:8px 0;color:#245b47}.card p{color:var(--muted);margin:0}
+.icon{width:44px;height:44px;border-radius:12px;background:var(--mint);display:grid;place-items:center;font-size:1.45rem}
+.note{background:#edf5f0;border-left:4px solid var(--green2);padding:16px 18px;border-radius:8px;color:#405b4e;margin:22px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+.panel{background:white;border:1px solid var(--line);border-radius:14px;padding:24px}
+.panel h3{margin-top:0;color:#245b47}
+.steps{display:grid;gap:12px}.step{display:flex;gap:13px;align-items:flex-start}.num{background:var(--green);color:white;border-radius:50%;width:29px;height:29px;display:grid;place-items:center;flex:none;font-weight:bold}
+table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden}th,td{padding:13px;text-align:left;border-bottom:1px solid var(--line)}th{background:#e8f3ed;color:#245b47}
+.punnett{display:grid;grid-template-columns:repeat(3,1fr);max-width:390px;gap:7px;margin:16px 0}.cell{padding:17px 8px;text-align:center;border-radius:8px;background:#edf5f0;font-weight:700}.cell.head{background:#d5e9dd;color:#245b47}.cell.result{background:#f8f1df;color:#70551f}
+select{padding:10px;border:1px solid #bfd2c6;border-radius:8px;background:white;font:inherit;color:var(--ink)}
+footer{background:#173e32;color:#e9f3ed;text-align:center;padding:30px 20px}footer p{margin:5px}
+.small{font-size:.9rem;color:var(--muted)}
+@media(max-width:760px){.hero-inner,.split{grid-template-columns:1fr}.dna-art{min-height:180px}.grid{grid-template-columns:1fr 1fr}.nav{align-items:flex-start;flex-direction:column}nav{justify-content:flex-start;gap:10px 15px}.hero{padding-top:48px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.section-head h2{font-size:1.7rem}main{padding-left:16px;padding-right:16px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="#inicio">GENÉTICA <span>EM FOCO</span></a>
+<nav aria-label="Navegação principal">
+<a href="#introducao">Introdução</a><a href="#dna">DNA e genes</a><a href="#mendel">Mendel</a><a href="#hereditariedade">Herança</a><a href="#aplicacoes">Aplicações</a>
+</nav></div></header>
+<section class="hero" id="inicio"><div class="hero-inner">
+<div><div class="eyebrow">Portal educativo de biologia</div><h1>O código da vida está aqui.</h1>
+<p>Explore a genética e descubra como as informações hereditárias são armazenadas, transmitidas e estudadas pelos cientistas.</p>
+<a class="btn" href="#introducao">Começar a explorar</a></div>
+<div class="dna-art" aria-label="Ilustração de uma molécula de DNA">
+<svg viewBox="0 0 340 300" role="img" aria-label="Dupla hélice de DNA estilizada">
+<path d="M95 20 C290 75 50 225 245 280" fill="none" stroke="#176b52" stroke-width="9" stroke-linecap="round"/>
+<path d="M245 20 C50 75 290 225 95 280" fill="none" stroke="#d6a84f" stroke-width="9" stroke-linecap="round"/>
+<g stroke="#8ab7a0" stroke-width="5" stroke-linecap="round">
+<path d="M119 31 L221 31 M160 56 L180 56 M105 91 L235 91 M83 128 L257 128 M87 169 L253 169 M112 207 L228 207 M150 246 L190 246 M119 269 L221 269"/>
+</g><g fill="#238365"><circle cx="95" cy="20" r="8"/><circle cx="245" cy="280" r="8"/></g>
+</svg></div>
+</div></section>
+<main>
+<section id="introducao"><div class="section-head"><div class="eyebrow">01 · Conceitos básicos</div><h2>O que é genética?</h2><p>A genética é a área da Biologia que estuda os genes, a hereditariedade e a variação das características dos seres vivos.</p></div>
+<div class="grid">
+<article class="card"><div class="icon">🧬</div><h3>Hereditariedade</h3><p>É a transmissão de informações genéticas dos pais para os descendentes.</p></article>
+<article class="card"><div class="icon">🔬</div><h3>Variação genética</h3><p>São diferenças no material genético que contribuem para a diversidade entre indivíduos.</p></article>
+<article class="card"><div class="icon">🌱</div><h3>Características</h3><p>Algumas características dependem dos genes; outras também são influenciadas pelo ambiente.</p></article>
+</div></section>
+<section id="dna"><div class="section-head"><div class="eyebrow">02 · Material genético</div><h2>DNA, genes e cromossomos</h2><p>Esses três conceitos estão relacionados, mas não significam a mesma coisa.</p></div>
+<div class="split">
+<div class="panel"><h3>DNA</h3><p>O DNA (ácido desoxirribonucleico) é a molécula que armazena as instruções genéticas usadas no desenvolvimento e funcionamento dos seres vivos. Sua estrutura é formada por duas fitas em dupla hélice.</p><div class="note">As bases nitrogenadas do DNA são adenina (A), timina (T), citosina (C) e guanina (G).</div></div>
+<div class="panel"><h3>Gene e cromossomo</h3><p><b>Gene:</b> trecho do DNA que contém informação funcional, muitas vezes relacionada à produção de uma molécula.</p><p><b>Cromossomo:</b> estrutura formada por DNA associado a proteínas, que organiza o material genético nas células.</p></div>
+</div></section>
+<section id="mendel"><div class="section-head"><div class="eyebrow">03 · História da genética</div><h2>Gregor Mendel e suas descobertas</h2><p>Gregor Mendel foi um monge e pesquisador que estudou a transmissão de características usando plantas de ervilha.</p></div>
+<div class="split">
+<div class="panel"><h3>Como foram os experimentos?</h3><div class="steps">
+<div class="step"><span class="num">1</span><p>Selecionou plantas de ervilha com características diferentes e observáveis.</p></div>
+<div class="step"><span class="num">2</span><p>Realizou cruzamentos entre plantas e acompanhou as características dos descendentes.</p></div>
+<div class="step"><span class="num">3</span><p>Contou os resultados ao longo das gerações e identificou padrões de herança.</p></div>
+</div></div>
+<div class="panel"><h3>Por que ele é importante?</h3><p>Mendel formulou princípios fundamentais da hereditariedade, mostrando que características são transmitidas por fatores hereditários — hoje relacionados aos genes.</p><p>Seus estudos ajudaram a estabelecer as bases da genética clássica.</p></div>
+</div></section>
+<section id="hereditariedade"><div class="section-head"><div class="eyebrow">04 · Como as características são herdadas</div><h2>Genótipo, fenótipo e cruzamentos</h2><p>O genótipo corresponde à constituição genética. O fenótipo é o conjunto de características observáveis, resultante da interação entre genótipo e ambiente.</p></div>
+<div class="split">
+<div class="panel"><h3>Termos importantes</h3><table><tr><th>Termo</th><th>Significado</th></tr><tr><td>Dominante</td><td>Alelo que se manifesta no heterozigoto, no modelo clássico.</td></tr><tr><td>Recessivo</td><td>Alelo que, nesse modelo, se manifesta quando está em dose dupla.</td></tr><tr><td>Homozigoto</td><td>Possui dois alelos iguais (AA ou aa).</td></tr><tr><td>Heterozigoto</td><td>Possui dois alelos diferentes (Aa).</td></tr></table></div>
+<div class="panel"><h3>Exemplo de quadro de Punnett</h3><p>Imagine um cruzamento didático entre dois indivíduos heterozigotos: Aa × Aa.</p>
+<div class="punnett"><div class="cell head">×</div><div class="cell head">A</div><div class="cell head">a</div><div class="cell head">A</div><div class="cell result">AA</div><div class="cell result">Aa</div><div class="cell head">a</div><div class="cell result">Aa</div><div class="cell result">aa</div></div>
+<p class="small">Resultado esperado: 25% AA, 50% Aa e 25% aa. É uma previsão para esse modelo simples, não uma garantia para cada família.</p></div>
+</div></section>
+<section id="aplicacoes"><div class="section-head"><div class="eyebrow">05 · Ciência no cotidiano</div><h2>Aplicações da genética</h2><p>O conhecimento genético é utilizado em diferentes áreas da sociedade.</p></div>
+<div class="grid">
+<article class="card"><div class="icon">🩺</div><h3>Medicina</h3><p>Ajuda a estudar doenças hereditárias, apoiar diagnósticos e orientar pesquisas sobre tratamentos.</p></article>
+<article class="card"><div class="icon">🌾</div><h3>Agricultura</h3><p>Contribui para pesquisas de plantas com características úteis, como resistência a pragas.</p></article>
+<article class="card"><div class="icon">🧪</div><h3>Identificação</h3><p>A análise de DNA pode auxiliar na identificação de pessoas e em testes de parentesco.</p></article>
+</div></section>
+<section id="quiz"><div class="section-head"><div class="eyebrow">06 · Teste seus conhecimentos</div><h2>Pequeno desafio</h2><p>Escolha uma resposta para conferir o que aprendeu.</p></div>
+<div class="panel"><h3>Qual molécula armazena a maior parte das informações hereditárias dos seres vivos?</h3>
+<select id="answer"><option value="">Selecione uma resposta</option><option value="a">Proteína</option><option value="b">DNA</option><option value="c">Glicose</option></select>
+<button class="btn" style="border:0;cursor:pointer;margin-left:8px" onclick="checkAnswer()">Verificar</button>
+<p id="feedback" aria-live="polite" class="small"></p></div></section>
+<section id="referencias"><div class="section-head"><div class="eyebrow">Para continuar aprendendo</div><h2>Referências e créditos</h2><p>Conteúdo introdutório elaborado para fins educativos, com base em conceitos fundamentais da Biologia.</p></div>
+<div class="panel"><p><b>Assuntos abordados:</b> genética, DNA, genes, cromossomos, hereditariedade, Gregor Mendel e aplicações da genética.</p><p><b>Projeto escolar:</b> Genética em Foco.</p><p class="small">Aluno(a): ____________________ &nbsp; Turma: __________ &nbsp; Escola: ____________________</p></div></section>
+</main>
+<footer><p><b>GENÉTICA EM FOCO</b></p><p>Conhecimento científico para compreender a vida.</p><p class="small" style="color:#c5d9ce">Projeto educativo de Biologia</p></footer>
+<script>
+function checkAnswer(){const a=document.getElementById('answer').value;const f=document.getElementById('feedback');if(!a){f.textContent='Escolha uma alternativa primeiro.';f.style.color='#8a6421';return;}if(a==='b'){f.textContent='Correto! O DNA armazena as informações hereditárias.';f.style.color='#176b52';}else{f.textContent='Não é essa. Revise a seção sobre DNA e tente novamente.';f.style.color='#a34b3d';}}
+</script>
+</body></html>
